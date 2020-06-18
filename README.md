@@ -54,7 +54,7 @@ The following diagram shows the data flow from consuming applications all the wa
 
 In the current implementation,  the web UI front-end is an Angular application running on a Google Cloud App Engine. The application may also be deployed on a Compute Engine depending on specific requirements.
 
-![app_config_mgr-implementation.png](:/9143d1992dd0451cb3eeaca4f20f95e4)
+![app_config_mgr-implementation.png](app_config_mgr-implementation.png)
 
 Another option for external configuration management is to use a Spring Config Server with a git repository as the data store. In that case, a Spring Config Client application would be autowired to retrieve the configuration during startup and serve as a REST API to provide that configuration to its consumers. This, however, is not shown in this high-level diagram but included in the architecture section instead.
 
