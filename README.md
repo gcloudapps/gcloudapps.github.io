@@ -65,13 +65,13 @@ Two use-case scenarios are given in the flow diagram to explain the steps involv
 1. Retrieve KV list for user
 2. Request Boot config for REST API
 
-![ecm_seq_diagram.png](:/1b48ea59fc9a4ee29113816ae06eeaee)
+![ecm_seq_diagram.png](ecm_seq_diagram.png)
 
 User requests are initiated from a browser; whereas, system requests are made by the Spring Boot REST API application. In both cases, requests for configuration are properly authenticated and authorized before providing the response.
 
 ### System Architecture
 
-![ecm_system_arch.png](:/b67c1d49b69945bcb2d9716ec409d0fc)
+![ecm_system_arch.png](ecm_system_arch.png)
 
 Show in the architecture diagram are the following components:
 
