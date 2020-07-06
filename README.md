@@ -100,7 +100,7 @@ To make changes to the KV pairs stored on the configuration repository, just com
 
 ### Related links
 
-1. [Angular front-end](frontend.md)
+1. [ECM Application](frontend.md)
 
 ### References
 
