@@ -98,6 +98,10 @@ To make changes to the KV pairs stored on the configuration repository, just com
 - Re-design the server component as a REST API service. This would add new capability to the server component to process requests from clients that do not have autowiring capability.
 - Deploy both client and server on the same GKE cluster.
 
+### Related links
+
+1. [Angular front-end](frontend.md)
+
 ### References
 
 1. Spring Cloud - https://cloud.spring.io/spring-cloud-static/spring-cloud.html
