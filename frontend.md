@@ -21,14 +21,13 @@ After the user is authenticated, the front-end application communicates with Spr
 
 ![app_config_mgr_app_components.png](app_config_mgr_app_components.png)  
 
-*Fig: Application components interaction*  
+*Fig: Application components interaction*<br/><br/>
 
 ## Angular UI ##
 
 ![ecm_angular_ui.png](ecm_angular_ui.png)  
 
-*Fig: Front-end to manage application parameters*  
-  
+*Fig: Front-end to manage application parameters*<br/><br/>
 
 Angular UI provides the front-end to manage application parameters. Its login functionality fulfills the dual-role of authenticating users via Google single-sign-on and providing authorization to them to access the application on GAE.
 
@@ -54,15 +53,13 @@ The endpoint **/config/save** is used for both add and update operations. To per
 
 ![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)  
 
-*Fig: Service account on IAM to access Firestore*  
-  
+*Fig: Service account on IAM to access Firestore*<br/><br/>
 
 ## NoSQL Database ##
 
 ![screen_cloud_firestore.png](screen_cloud_firestore.png)  
 
-*Fig: Document collection on Cloud Firestore*  
-  
+*Fig: Document collection on Cloud Firestore*<br/><br/>
 
 Configuration parameters are stored in Firestore in the form of documents under a collection. Firestore is a serverless and schemaless NoSQL database and provides a flexible way of storing key-value pairs. This provides us the ability to store any arbitrary data and be able to retrieve them quickly and efficiently. It is made possible by the client API from Firestore that the REST API uses to retrieve the stored data.
 
