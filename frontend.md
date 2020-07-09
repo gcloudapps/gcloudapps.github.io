@@ -74,15 +74,15 @@ The endpoint **/config/save** is used for both add and update operations. To per
 Configuration parameters are stored in Firestore in the form of documents under a collection. Firestore is a serverless and schemaless NoSQL database and provides a flexible way of storing key-value pairs. This provides us the ability to store any arbitrary data and be able to retrieve them quickly and efficiently. It is made possible by the client API from Firestore that the REST API uses to retrieve the stored data.
 
 ## Related Links ##
-[Demo video on YouTube](https://youtu.be/6WZ72nSnfDU)
+- [Demo video on YouTube](https://youtu.be/6WZ72nSnfDU)
 
 ## References ##
-[Angular](https://angular.io/)
-[Angular Material](https://material.angular.io/)
-[Spring Boot](https://spring.io/projects/spring-boot)
-[Cloud Firestore](https://firebase.google.com/docs/firestore)
-[Identity and Access Management](https://cloud.google.com/iam)
-[Identity-Aware Proxy](https://cloud.google.com/iap)
-[Angular Social Login](https://www.npmjs.com/package/angularx-social-login)
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Cloud Firestore](https://firebase.google.com/docs/firestore)
+- [Identity and Access Management](https://cloud.google.com/iam)
+- [Identity-Aware Proxy](https://cloud.google.com/iap)
+- [Angular Social Login](https://www.npmjs.com/package/angularx-social-login)
 
 ***
