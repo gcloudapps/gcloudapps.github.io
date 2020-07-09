@@ -28,6 +28,7 @@ After the user is authenticated, the front-end application communicates with Spr
 ![ecm_angular_ui.png](ecm_angular_ui.png)  
 
 *Fig: Front-end to manage application parameters*  
+  
 
 Angular UI provides the front-end to manage application parameters. Its login functionality fulfills the dual-role of authenticating users via Google single-sign-on and providing authorization to them to access the application on GAE.
 
@@ -36,6 +37,7 @@ Authorization is managed by using the pre-defined *roles/iap.httpsResourceAccess
 ![screen-app-engine-iap.png](screen-app-engine-iap.png)  
 
 *Fig: App Engine configuration with IAP*  
+  
 
 The front-end application is thus able to make use of the access control provided by IAM. After proper authentication and authorization, a user can perform any CRUD operation on the parameters: read, create, update, or delete.
 
@@ -54,12 +56,14 @@ The endpoint **/config/save** is used for both add and update operations. To per
 ![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)  
 
 *Fig: Service account on IAM to access Firestore*  
+  
 
 ## NoSQL Database ##
 
 ![screen_cloud_firestore.png](screen_cloud_firestore.png)  
 
 *Fig: Document collection on Cloud Firestore*  
+  
 
 Configuration parameters are stored in Firestore in the form of documents under a collection. Firestore is a serverless and schemaless NoSQL database and provides a flexible way of storing key-value pairs. This provides us the ability to store any arbitrary data and be able to retrieve them quickly and efficiently. It is made possible by the client API from Firestore that the REST API uses to retrieve the stored data.
 
