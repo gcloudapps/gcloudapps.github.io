@@ -17,8 +17,10 @@ In our implementation, the parameters are managed from an Angular UI front-end a
 - the other advantage is the integration of single-sign-on with Google authentication and most importantly with IAM thus providing all the access control that comes along with it
 
 After the user is authenticated, the front-end application communicates with Spring Boot REST API to retrieve the application parameters (in the form of key-value pairs) from Firestore. The Spring Boot application implementing REST API uses the client API provided by Firestore to manage the data.
+  
 
 ![app_config_mgr_app_components.png](app_config_mgr_app_components.png)  
+
 *Fig: Application components interaction*
 
 ## Angular UI ##
