@@ -19,7 +19,7 @@ In our implementation, the parameters are managed from an Angular UI front-end a
 After the user is authenticated, the front-end application communicates with Spring Boot REST API to retrieve the application parameters (in the form of key-value pairs) from Firestore. The Spring Boot application implementing REST API uses the client API provided by Firestore to manage the data.
 
 ***
-![app_config_mgr_app_components.png](:/5f050907c1f44b6d84ebcd33d7cf4e03)
+![app_config_mgr_app_components.png](app_config_mgr_app_components.png)
 *Fig: Application components interaction*
 ***
 ***
@@ -27,7 +27,7 @@ After the user is authenticated, the front-end application communicates with Spr
 ## Angular UI ##
 
 ***
-![ecm_angular_ui.png](:/72e19bd0966b4ff58fb5d5ebafc8f303)
+![ecm_angular_ui.png](ecm_angular_ui.png)
 *Fig: Front-end to manage application parameters*
 ***
 ***
@@ -37,7 +37,7 @@ Angular UI provides the front-end to manage application parameters. Its login fu
 Authorization is managed by using the pre-defined *roles/iap.httpsResourceAccessor* role in IAM. It is accomplished by adding authorized users to this role and using it to configure the App Engine on IAP (Identity-Aware Proxy) console page.
 
 ***
-![screen-app-engine-iap.png](:/9e1e2809bf86455f820bf6d17ddcc5cb)
+![screen-app-engine-iap.png](screen-app-engine-iap.png)
 ***
 *Fig: App Engine configuration with IAP*
 ***
@@ -57,7 +57,7 @@ The spring boot application, upon validation of the access token with Google Clo
 The endpoint **/config/save** is used for both add and update operations. To perform all these operations on Firestore database, on behalf of the consumers, the REST API is provided an IAM service account with proper permissions. Details of this account are exported as a json file and the REST API application uses it to access the database via Firestore API.
 
 ***
-![screen-firestore-svc-acct.png](:/0065cedbb1b1421e83ea6c83d912405e)
+![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)
 ***
 *Fig: Service account on IAM to access Firestore*
 ***
@@ -66,7 +66,7 @@ The endpoint **/config/save** is used for both add and update operations. To per
 ## NoSQL Database ##
 
 ***
-![screen_cloud_firestore.png](:/489533098a7244c4b4072b45661b442d)
+![screen_cloud_firestore.png](screen_cloud_firestore.png)
 *Fig: Document collection on Cloud Firestore*
 ***
 ***
