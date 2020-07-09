@@ -18,29 +18,20 @@ In our implementation, the parameters are managed from an Angular UI front-end a
 
 After the user is authenticated, the front-end application communicates with Spring Boot REST API to retrieve the application parameters (in the form of key-value pairs) from Firestore. The Spring Boot application implementing REST API uses the client API provided by Firestore to manage the data.
 
-***
-![app_config_mgr_app_components.png](app_config_mgr_app_components.png)
+![app_config_mgr_app_components.png](app_config_mgr_app_components.png)  
 *Fig: Application components interaction*
-***
-***
 
 ## Angular UI ##
 
-***
-![ecm_angular_ui.png](ecm_angular_ui.png)
+![ecm_angular_ui.png](ecm_angular_ui.png)  
 *Fig: Front-end to manage application parameters*
-***
-***
 
 Angular UI provides the front-end to manage application parameters. Its login functionality fulfills the dual-role of authenticating users via Google single-sign-on and providing authorization to them to access the application on GAE.
 
 Authorization is managed by using the pre-defined *roles/iap.httpsResourceAccessor* role in IAM. It is accomplished by adding authorized users to this role and using it to configure the App Engine on IAP (Identity-Aware Proxy) console page.
 
-***
-![screen-app-engine-iap.png](screen-app-engine-iap.png)
-***
+![screen-app-engine-iap.png](screen-app-engine-iap.png)  
 *Fig: App Engine configuration with IAP*
-***
 
 The front-end application is thus able to make use of the access control provided by IAM. After proper authentication and authorization, a user can perform any CRUD operation on the parameters: read, create, update, or delete.
 
@@ -56,20 +47,13 @@ The spring boot application, upon validation of the access token with Google Clo
 
 The endpoint **/config/save** is used for both add and update operations. To perform all these operations on Firestore database, on behalf of the consumers, the REST API is provided an IAM service account with proper permissions. Details of this account are exported as a json file and the REST API application uses it to access the database via Firestore API.
 
-***
-![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)
-***
+![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)  
 *Fig: Service account on IAM to access Firestore*
-***
-
 
 ## NoSQL Database ##
 
-***
-![screen_cloud_firestore.png](screen_cloud_firestore.png)
+![screen_cloud_firestore.png](screen_cloud_firestore.png)  
 *Fig: Document collection on Cloud Firestore*
-***
-***
 
 Configuration parameters are stored in Firestore in the form of documents under a collection. Firestore is a serverless and schemaless NoSQL database and provides a flexible way of storing key-value pairs. This provides us the ability to store any arbitrary data and be able to retrieve them quickly and efficiently. It is made possible by the client API from Firestore that the REST API uses to retrieve the stored data.
 
@@ -84,5 +68,3 @@ Configuration parameters are stored in Firestore in the form of documents under 
 - [Identity and Access Management](https://cloud.google.com/iam)
 - [Identity-Aware Proxy](https://cloud.google.com/iap)
 - [Angular Social Login](https://www.npmjs.com/package/angularx-social-login)
-
-***
