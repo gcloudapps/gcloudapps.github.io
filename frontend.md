@@ -53,7 +53,7 @@ The endpoint **/config/save** is used for both add and update operations. To per
 
 ![screen-firestore-svc-acct.png](screen-firestore-svc-acct.png)  
 
-*Fig: Service account on IAM to access Firestore*<br/><br/>
+*Fig: IAM service account used by the REST API to access Firestore*<br/><br/>
 
 ## NoSQL Database ##
 
