@@ -36,9 +36,7 @@ Authorization is managed by using the pre-defined *roles/iap.httpsResourceAccess
 
 ![screen-app-engine-iap.png](screen-app-engine-iap.png)  
 
-*Fig: App Engine configuration with IAP*  
-
-<br/><br/>
+*Fig: App Engine configuration with IAP*<br/><br/>
 
 The front-end application is thus able to make use of the access control provided by IAM. After proper authentication and authorization, a user can perform any CRUD operation on the parameters: read, create, update, or delete.
 
